@@ -1,0 +1,5 @@
+f = input("Input the Filename: ")
+x = f.split(".")
+y = x[-1]
+extn = {"txt":"text", "py":"python", "xs":"excel"}
+print("The extension of the file is : ",extn.get(y))
