@@ -1,0 +1,8 @@
+import collections
+string = input("enter string : ")
+frequencies = collections.Counter(string)
+repeated = {}
+for key, value in frequencies.items():
+    if value > 0:
+        repeated[key] = value
+print(repeated)
